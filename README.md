@@ -1,30 +1,79 @@
-# Landing page hero
+# Zorvexra Landing
+[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/ArticD3v/zorvexra-landing)
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Zorvexra Landing is a visually striking, single-page application built with Next.js, Tailwind CSS, and TypeScript. It features a unique horizontal scrolling layout with full-screen snapping sections, a dynamic liquid metal background effect, and a modern, dark aesthetic. This project serves as an excellent template for a product or service landing page.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/rajs-projects-a7283d3f/v0-landing-page-hero)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/TDZy0S0ZtGl)
+## Key Features
 
-## Overview
+-   **Horizontal Scrolling Experience:** Full-screen sections with smooth-snap scrolling functionality, creating an immersive user journey.
+-   **Dynamic Visuals:** An animated "liquid metal" background powered by `@paper-design/shaders-react` provides a captivating visual hook.
+-   **Floating Navigation:** A semi-transparent, blurring navigation bar that remains fixed at the top for easy access to all sections.
+-   **Rich Component Library:** Leverages shadcn/ui for a comprehensive set of pre-built and customizable components, including a Bento Grid pricing table, shiny buttons, and various form elements.
+-   **Interactive Sections:** Includes dedicated, beautifully designed components for a Hero, Features, Pricing, About, and Contact form.
+-   **Responsive & Mobile-Friendly:** Adapts gracefully to different screen sizes, with custom hooks and logic for an optimized mobile experience.
+-   **Distinctive Typography:** Integrates `Open Sans`, `Rubik`, and `Instrument Serif` fonts for a polished and professional look.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Tech Stack
 
-## Deployment
+-   **Framework:** [Next.js](https://nextjs.org/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+-   **Animation:** [Framer Motion](https://www.framer.com/motion/)
+-   **Background Shader:** [@paper-design/shaders-react](https://www.npmjs.com/package/@paper-design/shaders-react)
 
-Your project is live at:
+## Project Structure
 
-**[https://vercel.com/rajs-projects-a7283d3f/v0-landing-page-hero](https://vercel.com/rajs-projects-a7283d3f/v0-landing-page-hero)**
+The repository is organized as follows:
 
-## Build your app
+```
+└── articd3v-zorvexra-landing/
+    ├── app/                # Next.js App Router: pages and layouts
+    │   ├── page.tsx        # Main entrypoint with horizontal scrolling sections
+    │   ├── layout.tsx      # Root layout, fonts, and metadata
+    │   └── ...
+    ├── components/         # Reusable React components
+    │   ├── ui/             # Core shadcn/ui components
+    │   ├── floating-navbar.tsx
+    │   └── liquid-metal-background.tsx
+    ├── hooks/              # Custom React hooks
+    │   └── use-mobile.ts   # Hook for detecting mobile devices
+    ├── lib/                # Utility functions
+    └── styles/             # Global styles and Tailwind CSS config
+```
 
-Continue building your app on:
+## Getting Started
 
-**[https://v0.app/chat/projects/TDZy0S0ZtGl](https://v0.app/chat/projects/TDZy0S0ZtGl)**
+To run this project locally, follow these steps:
 
-## How It Works
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/articd3v/zorvexra-landing.git
+    ```
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+2.  **Navigate to the project directory:**
+    ```bash
+    cd zorvexra-landing
+    ```
+
+3.  **Install dependencies:**
+    This project uses `pnpm`. If you don't have it, install it first (`npm install -g pnpm`).
+    ```bash
+    pnpm install
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    pnpm dev
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+-   `pnpm dev`: Starts the development server.
+-   `pnpm build`: Creates a production-ready build of the application.
+-   `pnpm start`: Starts the production server.
+-   `pnpm lint`: Runs the linter to check for code quality issues.
