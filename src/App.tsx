@@ -1,4 +1,4 @@
-import { LiquidMetalBackground } from "@/components/liquid-metal-background"
+import { DarkVeil } from "@/components/dark-veil"
 import { FloatingNavbar } from "@/components/floating-navbar"
 import { ShinyButton } from "@/components/ui/shiny-button"
 import { Feature } from "@/components/ui/feature-with-advantages"
@@ -144,7 +144,9 @@ export default function App() {
 
   return (
     <main className="relative h-screen overflow-hidden">
-      <LiquidMetalBackground />
+      <div className="absolute inset-0 -z-10">
+        <DarkVeil />
+      </div>
 
       <div className="fixed inset-0 z-[5] bg-black/50" />
 
