@@ -167,7 +167,7 @@ export default function App() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">zorvexra</span>{" "}
+                <span className="font-open-sans-custom not-italic">zorvexra</span>{""}
                 <span className="font-serif italic">.xod3</span>{" "}
               </h1>
 
