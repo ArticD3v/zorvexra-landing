@@ -172,8 +172,7 @@ export default function App() {
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                whether you are a designer, a developer, or just curious, take an idea,{" "}
-                <span className="font-serif italic">prompt</span> it, and watch it come alive
+                The Developer Innovation Ecosystem
               </p>
 
               <div className="flex justify-center">
