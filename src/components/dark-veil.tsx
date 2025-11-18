@@ -86,7 +86,7 @@ type DarkVeilProps = {
 export function DarkVeil({
   hueShift = 0,
   noiseIntensity = 0,
-  scanlineIntensity = 1,
+  scanlineIntensity = 0,
   speed = 1.5,
   scanlineFrequency = 0,
   warpAmount = 2.5,
