@@ -1,6 +1,7 @@
 import { DarkVeil } from "@/components/dark-veil"
 import { FloatingNavbar } from "@/components/floating-navbar"
 import { ShinyButton } from "@/components/ui/shiny-button"
+import ShinyText from "../components/ui/shiny-text"
 import { Feature } from "@/components/ui/feature-with-advantages"
 import { BentoPricing } from "@/components/ui/bento-pricing"
 import { ContactCard } from "@/components/ui/contact-card"
@@ -167,7 +168,7 @@ export default function App() {
         <section id="home" className="flex min-w-full snap-start items-center justify-center px-4 py-20">
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
-              <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl" style={{ lineHeight: "105px" }}>
+              <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
                 <span className="font-open-sans-custom not-italic">zorvexra</span>
                 <RotatingText
                   texts={['.xod3', '.developer', '.portfolio', '.projects']}
@@ -179,14 +180,14 @@ export default function App() {
                   staggerDuration={0.05}
                   staggerFrom="last"
                   transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                  rotationInterval={2000}
+                  rotationInterval={3000}
                   auto={true}
                   loop={true}
                 />{" "}
               </h1>
 
-              <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl" style={{ lineHeight: "0px" }}>
-                The Developer Innovation Ecosystem
+              <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
+                <ShinyText text="The Developer Innovation Ecosystem" speed={3} className="text-xl" />
               </p>
 
               <div className="flex justify-center">

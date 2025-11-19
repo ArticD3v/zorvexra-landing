@@ -3,6 +3,7 @@
 import { LiquidMetalBackground } from "@/components/liquid-metal-background"
 import { FloatingNavbar } from "@/components/floating-navbar"
 import { ShinyButton } from "@/components/ui/shiny-button"
+import ShinyText from "@/components/ui/shiny-text"
 import { Feature } from "@/components/ui/feature-with-advantages"
 import { BentoPricing } from "@/components/ui/bento-pricing"
 import { ContactCard } from "@/components/ui/contact-card"
@@ -157,7 +158,7 @@ export default function Home() {
         className="relative z-10 flex h-screen w-full overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
-        <style jsx>{`
+        <style>{`
           div::-webkit-scrollbar {
             display: none;
           }
@@ -173,7 +174,7 @@ export default function Home() {
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                whether you are a designer, a developer, or just curious, take an idea,{" "}
+                <ShinyText text="whether you are a designer, a developer, or just curious, take an idea," speed={8} className="text-xl" />
                 <span className="font-serif italic">prompt</span> it, and watch it come alive
               </p>
 
@@ -325,7 +326,7 @@ export default function Home() {
                   className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
                   type="button"
                 >
-                  Submit
+                Submit
                 </Button>
               </form>
             </ContactCard>

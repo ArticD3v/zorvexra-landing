@@ -63,7 +63,7 @@ export function FloatingNavbar() {
             size="sm"
             className="bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
           >
-            <p>Get Started</p>
+            Get Started
           </Button>
         </div>
       </div>
