@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useEffect, useRef } from "react"
+import RotatingText from "@/components/ui/RotatingText"
 
 export default function App() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
@@ -167,8 +168,21 @@ export default function App() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">zorvexra</span>{""}
-                <span className="font-serif italic">.xod3</span>{" "}
+                <span className="font-open-sans-custom not-italic">zorvexra</span>
+                <RotatingText
+                  texts={['.xod3', '.developer', '.portfolio', '.projects']}
+                  mainClassName="font-serif italic inline-flex"
+                  splitLevelClassName="overflow-hidden"
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.05}
+                  staggerFrom="last"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                  auto={true}
+                  loop={true}
+                />{" "}
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
