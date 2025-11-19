@@ -167,7 +167,7 @@ export default function App() {
         <section id="home" className="flex min-w-full snap-start items-center justify-center px-4 py-20">
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
-              <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl" style={{ lineHeight: "110px" }}>
+              <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl" style={{ lineHeight: "115px" }}>
                 <span className="font-open-sans-custom not-italic">zorvexra</span>
                 <RotatingText
                   texts={['.xod3', '.developer', '.portfolio', '.projects']}
