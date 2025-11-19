@@ -220,6 +220,7 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
                         )
                       }}
                       className={cn('inline-block', elementLevelClassName)}
+                      style={char === '3' ? { paddingRight: '20px' } : undefined}
                     >
                       {char}
                     </motion.span>
