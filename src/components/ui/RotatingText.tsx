@@ -206,24 +206,31 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
               return (
                 <span key={wordIndex} className={cn('inline-flex', splitLevelClassName)}>
-                  {wordObj.characters.map((char, charIndex) => (
-                    <motion.span
-                      key={charIndex}
-                      initial={initial}
-                      animate={animate}
-                      exit={exit}
-                      transition={{
-                        ...transition,
-                        delay: getStaggerDelay(
-                          previousCharsCount + charIndex,
-                          array.reduce((sum, word) => sum + word.characters.length, 0)
-                        )
-                      }}
-                      className={cn('inline-block', elementLevelClassName)}
-                    >
-                      {char}
-                    </motion.span>
-                  ))}
+                  {wordObj.characters.map((char, charIndex) => {
+                    const totalChars = array.reduce((sum, word) => sum + word.characters.length, 0);
+                    const currentCharIndex = previousCharsCount + charIndex;
+                    const isLastChar = currentCharIndex === totalChars - 1;
+
+                    return (
+                      <motion.span
+                        key={charIndex}
+                        initial={initial}
+                        animate={animate}
+                        exit={exit}
+                        transition={{
+                          ...transition,
+                          delay: getStaggerDelay(
+                            currentCharIndex,
+                            totalChars
+                          )
+                        }}
+                        className={cn('inline-block', elementLevelClassName)}
+                        style={isLastChar ? { paddingRight: '20px' } : undefined}
+                      >
+                        {char}
+                      </motion.span>
+                    );
+                  })}
                   {wordObj.needsSpace && <span className="whitespace-pre"> </span>}
                 </span>
               );
