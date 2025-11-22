@@ -1,0 +1,202 @@
+[
+    {
+        "text": "Debugging: Being the detective in a crime movie where you are also the murderer.",
+        "author": "Harlan Mills"
+    },
+    {
+        "text": "I don’t always test my code, but when I do, I do it in production.",
+        "author": "Javier Ramírez"
+    },
+    {
+        "text": "There is no place like 127.0.0.1.",
+        "author": "Liam MacKenzie"
+    },
+    {
+        "text": "It works on my machine.",
+        "author": "Sandra Keller"
+    },
+    {
+        "text": "A user interface is like a joke. If you have to explain it, it’s not that good.",
+        "author": "Brett Victor"
+    },
+    {
+        "text": "To err is human. To blame it on the computer is even more human.",
+        "author": "Robert Orben"
+    },
+    {
+        "text": "99 little bugs in the code. Take one down, patch it around, 127 little bugs in the code.",
+        "author": "Kevin Cline"
+    },
+    {
+        "text": "There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+        "author": "Phil Karlton"
+    },
+    {
+        "text": "If at first you don’t succeed; call it version 1.0.",
+        "author": "David Martin"
+    },
+    {
+        "text": "A good programmer looks both ways before crossing a one-way street.",
+        "author": "Doug Linder"
+    },
+    {
+        "text": "Real programmers count from zero.",
+        "author": "Tom DeMarco"
+    },
+    {
+        "text": "Programming isn't about what you know; it's about what you can figure out.",
+        "author": "Chris Pine"
+    },
+    {
+        "text": "Weeks of coding can save you hours of planning.",
+        "author": "Taylor Benson"
+    },
+    {
+        "text": "Software and cathedrals are much the same — first we build them, then we pray.",
+        "author": "Thomas Haigh"
+    },
+    {
+        "text": "In order to understand recursion, one must first understand recursion.",
+        "author": "Bill Moret"
+    },
+    {
+        "text": "There’s nothing quite so permanent as a quick fix.",
+        "author": "Helen Brooks"
+    },
+    {
+        "text": "Documentation is like sex: when it’s good, it’s very good; when it's bad, it’s better than nothing.",
+        "author": "John Robbins"
+    },
+    {
+        "text": "Programming is 10% writing code and 90% understanding why it’s not working.",
+        "author": "Gary Kildall"
+    },
+    {
+        "text": "If debugging is the process of removing bugs, then programming must be the process of putting them in.",
+        "author": "Edsger Dijkstra"
+    },
+    {
+        "text": "Computers are fast; programmers keep it slow.",
+        "author": "Sasha Levin"
+    },
+    {
+        "text": "The computer was born to solve problems that did not exist before.",
+        "author": "Bill Gates"
+    },
+    {
+        "text": "A serious bug is always where you least expect it — right after you deploy.",
+        "author": "Frank Watson"
+    },
+    {
+        "text": "Code never lies, comments sometimes do.",
+        "author": "Ron Jeffries"
+    },
+    {
+        "text": "Walking on water and developing software from a specification are easy if both are frozen.",
+        "author": "Edward V. Berard"
+    },
+    {
+        "text": "The best thing about a boolean is even if you're wrong, you're only off by one.",
+        "author": "Cedric Howell"
+    },
+    {
+        "text": "Sometimes it pays to stay in bed on Monday rather than spending the rest of the week debugging Monday’s code.",
+        "author": "Dan Salomon"
+    },
+    {
+        "text": "Programs are like poems: you can read them again and again and still not know why they work.",
+        "author": "Harriet McClure"
+    },
+    {
+        "text": "Artificial intelligence is no match for natural stupidity.",
+        "author": "Mike Abrams"
+    },
+    {
+        "text": "No code is faster than no code.",
+        "author": "Steve McConnell"
+    },
+    {
+        "text": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+        "author": "Martin Fowler"
+    },
+    {
+        "text": "The best code is no code at all.",
+        "author": "Jeff Atwood"
+    },
+    {
+        "text": "The best performance optimization is to not do the work.",
+        "author": "Connor Reid"
+    },
+    {
+        "text": "You know you’re a programmer if you’ve been stopped for traffic violations for looking at code while driving.",
+        "author": "Alex Raymond"
+    },
+    {
+        "text": "Programming is the art of telling another human being what one wants the computer to do.",
+        "author": "Donald Knuth"
+    },
+    {
+        "text": "I have not failed. I've just found 10,000 ways that won’t work — and wrote all of them into the codebase.",
+        "author": "Eleanor Brooks"
+    },
+    {
+        "text": "The best part of programming is when the code works. The worst part is realizing you don’t know why.",
+        "author": "Jacob Turner"
+    },
+    {
+        "text": "When in doubt, delete your node_modules.",
+        "author": "Marco Silvestri"
+    },
+    {
+        "text": "Why do programmers prefer dark mode? Because light attracts bugs.",
+        "author": "Nina Roth"
+    },
+    {
+        "text": "You can’t have great software without a great team, and most software teams behave like dysfunctional families.",
+        "author": "Jim McCarthy"
+    },
+    {
+        "text": "One man’s crappy software is another man’s full-time job.",
+        "author": "Jessica Gaston"
+    },
+    {
+        "text": "Computers make very fast, very accurate mistakes.",
+        "author": "Andreas Vogel"
+    },
+    {
+        "text": "Good code is its own best documentation.",
+        "author": "Steve McConnell"
+    },
+    {
+        "text": "Thinking is harder than coding. That’s why many developers just code.",
+        "author": "Patricia Hale"
+    },
+    {
+        "text": "Every great developer you know got there by solving problems they were unqualified to solve — until they did.",
+        "author": "Patrick McKenzie"
+    },
+    {
+        "text": "Sometimes the easiest way to solve a bug is to delete everything and go live in the mountains.",
+        "author": "Leo Harrison"
+    },
+    {
+        "text": "Move fast and break things. If you’re not breaking stuff, you’re not moving fast enough.",
+        "author": "Mark Zuckerberg"
+    },
+    {
+        "text": "Developer: someone who fixes a problem you didn't know you had in a way you don't understand.",
+        "author": "Chris Dixon"
+    },
+    {
+        "text": "Code without tests is like a car without brakes.",
+        "author": "Samuel Pike"
+    },
+    {
+        "text": "Never trust a computer you can’t throw out a window.",
+        "author": "Steve Wozniak"
+    },
+    {
+        "text": "Before software can be reusable it first has to be usable.",
+        "author": "Ralph Johnson"
+    }
+]

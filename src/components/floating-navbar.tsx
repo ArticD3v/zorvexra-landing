@@ -1,10 +1,36 @@
 import { Button } from "@/components/ui/button"
+import { useAuth } from "@/context/AuthContext"
+import { useNavigate, useLocation } from "react-router-dom"
 
 export function FloatingNavbar() {
+  const { user } = useAuth()
+  const navigate = useNavigate()
+  const location = useLocation()
+  const isDashboard = location.pathname === '/dashboard'
+
   const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" })
+    // If on dashboard, navigate to home first
+    if (isDashboard) {
+      navigate('/')
+      setTimeout(() => {
+        const section = document.getElementById(sectionId)
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" })
+        }
+      }, 100)
+    } else {
+      const section = document.getElementById(sectionId)
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" })
+      }
+    }
+  }
+
+  const handleGetStarted = () => {
+    if (user) {
+      navigate('/dashboard')
+    } else {
+      navigate('/signup')
     }
   }
 
@@ -40,10 +66,10 @@ export function FloatingNavbar() {
               Features
             </button>
             <button
-              onClick={() => scrollToSection("pricing")}
+              onClick={() => scrollToSection("showcase")}
               className="text-sm font-open-sans-custom text-gray-300 transition-colors hover:text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
             >
-              Pricing
+              Showcase
             </button>
             <button
               onClick={() => scrollToSection("about")}
@@ -57,13 +83,20 @@ export function FloatingNavbar() {
             >
               Contact
             </button>
+            <button
+              onClick={() => scrollToSection("documentation")}
+              className="text-sm font-open-sans-custom text-gray-300 transition-colors hover:text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
+            >
+              Documentation
+            </button>
           </div>
 
           <Button
             size="sm"
+            onClick={handleGetStarted}
             className="bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
           >
-            <p>Get Started</p>
+            {user ? 'Dashboard' : 'Start Building'}
           </Button>
         </div>
       </div>
