@@ -4,6 +4,11 @@ import Home from '@/pages/Home'
 import Login from '@/pages/Login'
 import Signup from '@/pages/Signup'
 import Dashboard from '@/pages/Dashboard'
+import MySubmissions from '@/pages/MySubmissions'
+import SubmitProject from '@/pages/SubmitProject'
+import Portfolio from '@/pages/Portfolio'
+import Showcase from '@/pages/Showcase'
+import Settings from '@/pages/Settings'
 
 export default function App() {
   return (
@@ -17,6 +22,46 @@ export default function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/submissions"
+          element={
+            <ProtectedRoute>
+              <MySubmissions />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/submit"
+          element={
+            <ProtectedRoute>
+              <SubmitProject />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/portfolio"
+          element={
+            <ProtectedRoute>
+              <Portfolio />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/showcase"
+          element={
+            <ProtectedRoute>
+              <Showcase />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/settings"
+          element={
+            <ProtectedRoute>
+              <Settings />
             </ProtectedRoute>
           }
         />

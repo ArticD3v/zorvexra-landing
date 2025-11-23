@@ -223,12 +223,12 @@ export default function Home() {
                 />{" "}
               </h1>
 
-              <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
+              <div className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
                 <ShinyText text="The Developer Innovation Ecosystem" speed={3} className="text-xl" />
-              </p>
+              </div>
 
               <div className="flex justify-center">
-                <button
+                <ShinyButton
                   onClick={() => {
                     const section = document.getElementById("showcase")
                     if (section) {
@@ -237,8 +237,8 @@ export default function Home() {
                   }}
                   className="px-8 py-3 text-base"
                 >
-                  <ShinyButton className="px-8 py-3 text-base">get started</ShinyButton>
-                </button>
+                  get started
+                </ShinyButton>
               </div>
             </div>
           </div>
